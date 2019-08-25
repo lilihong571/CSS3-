@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*<!-- 选中任意父元素下面的最后一个标签，这个标签必须是div才会被选中 -->*/
+		div:Last-chiLd{/*div:last-Child,   List,Child大小写都行*/
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div>我是body下面的第1个元素div</div>
+	<div>我是body下面的第2个元素div</div>
+	<div>我是body下面的第3个元素div</div>
+	<section>
+		<div>(我是body下面的(第4个元素section下面的第1个元素div))</div>
+		<div>(我是body下面的(第4个元素section下面的第2个元素div))</div><!-- red -->
+	</section>
+	<section>
+		<div>(我是body下面的(第5个元素section下面的第1个元素div))</div>
+		<div>(我是body下面的(第5个元素section下面的第2个元素div))</div><!-- red -->
+	</section>
+</body>
+</html>

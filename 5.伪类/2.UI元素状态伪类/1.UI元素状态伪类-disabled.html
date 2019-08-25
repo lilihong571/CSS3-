@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*<!-- input的通用样式  默认:enabled -->*/
+		input{/*和input:enabled一样，但也不一样，input是通用样式，他的样式input:disabled也可以使用*/
+			width: 200px;
+			height: 5px;
+			border: 1px red solid;
+		}
+		/*input的不可输入状态下的样式*/
+		input:disabled{
+			background: black;
+			border: 1px yellow dashed;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" disabled="disabled">
+	<input type="text">
+	<input type="text">
+	<input type="text">
+</body>
+</html>

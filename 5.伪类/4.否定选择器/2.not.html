@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		nav{
+			width: 500px;
+			margin: 0 auto;
+			padding: 0;
+		}
+		a{
+			display: block;
+			float: left;
+			width: 90px;
+			text-decoration: none;
+			/*border-right: 1px red solid;*/
+		}
+		.nav{
+			overflow: hidden;
+		}
+		/*让最后一个没有右边线*/
+		nav>a:not(:last-child){
+			border-right: 1px red solid;
+		}
+	</style>
+</head>
+<body>
+	<nav class="nav">
+		<a href="#">first</a>
+		<a href="#">second</a>
+		<a href="#">third</a>
+		<a href="#">fourth</a>
+		<a href="#">fifth</a>
+	</nav>
+</body>
+</html>

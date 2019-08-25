@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*<!-- 匹配p的父元素下面 只有p这个子元素的 p元素 -->*/
+		p:only-child{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>我是第1个div下面的p元素</p>
+		<h1>我是第1个div下的h1元素</h1>
+	</div>
+	<div>
+		<p>我是第2个div下面的p元素</p><!--red-->
+	</div>
+	<div>
+		<p>我是第3个div下面的p元素</p>
+		<h1>我是第3个div下的h1元素</h1>
+	</div>
+</body>
+</html>

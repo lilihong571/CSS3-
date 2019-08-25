@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*<!-- 选中body下面的第5个标签名为section的元素  标签名为其他的，不会选中 -->*/
+		section:nth-Child(5){
+			color: red;
+		}
+		/*选中section下面第2个标签，且标签名要为div才会被选中*/
+		section>div:nth-child(2){
+			color: yellow;
+		}
+		p{
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<div>我是body下面的第1个元素div</div>
+	<div>我是body下面的第2个元素div</div>
+	<div>我是body下面的第3个元素div</div>
+	<section>
+		<div>我是body下面的第4个元素sectino下面的第1个元素div</div>
+		<p>我是body下面的第4个元素sectino下面的第2个元素p</p>
+		<div>我是body下面的第4个元素sectino下面的第3个元素div</div>
+	</section>
+	<section>我是body下面的第5个元素section</section>
+	<section>我是body下面的第6个元素section</section>
+	<section>我是body下面的第7个元素section</section>
+</body>
+</html>

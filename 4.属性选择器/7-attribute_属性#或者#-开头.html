@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*<!-- 选择属性href的 属性值为#号 或者 属性值为#-k开头 的a标签 -->*/
+		a[href|="#"]{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<a href="#1">我是#1</a>
+	<a href="#">我是#</a>
+	<a href="2#">我是2#</a>
+	<a href="1#2">我是1#2</a>
+	<a href="#-">我是#-</a>
+	<a href="#-1">我是#-1</a>
+	<a href="1#-">我是1#-</a>
+	<a href="1#-2">我是1#-2</a>
+</body>
+</html>

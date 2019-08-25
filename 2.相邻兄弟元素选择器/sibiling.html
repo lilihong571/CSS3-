@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*找的是section下面的紧接着div的那一个article*/
+		section>div+article{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<article>
+			<div>这是第一个article里面的div</div>
+		</article>
+		<div>这是article外面的div</div>
+		<!-- <div>我是紧接着div的div</div> -->
+		<p>我是紧接着div的p</p><!-- 干扰了div和article挨着 -->
+		<article>
+			<div>这是第二个article里面的div</div>
+		</article>
+	</section>
+</body>
+</html>

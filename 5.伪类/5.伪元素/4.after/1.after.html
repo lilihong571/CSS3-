@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		header{
+			background: #0f0;
+		}
+	
+		article{
+			width: 40%;
+			height: 50px;
+			background: red;
+			float: left;
+		}
+		aside{
+			width: 40%;
+			height: 30px;
+			background: yellow;
+			float: right;
+		}
+		/*清除浮动方法1*/
+		/*div{
+			clear: both;
+		}*/
+		/*清除浮动方法2*/
+		header::after{
+			display: block;
+			content: "";
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<article></article>
+		<aside></aside>
+		<!-- /*清除浮动方法1*/ -->
+		<!-- <div></div> -->
+	</header>
+</body>
+</html>

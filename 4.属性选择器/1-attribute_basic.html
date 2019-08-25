@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*<!-- 识别所有带有href属性的a标签 -->*/
+		a[href]{
+			text-decoration: none;
+			color: green;
+		}
+		a{
+			/*所有的a标签都会变成红色*/
+			color: red;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<!-- 写了href属性的a标签，默认有下划线默认字体颜色为蓝色 -->
+	<a href="#">attrbute1</a><!-- 红色 -->
+	<a href="#">attrbute2</a><!-- 红色 -->
+	<a href="#">attrbute3</a><!-- 红色 -->
+	<a href="#">attrbute4</a><!-- 红色 -->
+	<!-- 没有写href属性的a标签，默认没有下划线默认没有字体颜色 -->
+	<a>没有显示写href属性的a标签</a><!-- 红色 -->
+</body>
+</html>

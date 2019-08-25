@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*<!-- 匹配div元素的父元素下面  只有一个div元素（可以有其他元素） 的div元素 -->*/
+		div:only-of-type{
+			color: red;
+		}
+		/*匹配p元素的父元素下面 只有一个p元素（可以有其他元素）的p元素*/
+		p:only-of-type{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div>我是第1个section下面的第1个div元素</div>
+		<div>我是第1个section下面的第2个div元素</div>
+		<p>我是第1个section下面的唯一一个p元素</p><!--blue-->
+	</section>
+	<section>
+		<div>我是第2个section下面的唯一一个div元素</div><!--red-->
+		<p>我是第2个section下面的第1个p元素</p>
+		<p>我是第2个section下面的第2个p元素</p>
+	</section>
+	<section>
+		<div>我是第3个section下面的第1个div元素</div>
+		<div>我是第3个section下面的第2个div元素</div>
+		<p>我是第3个section下面的第1个p元素</p>
+		<p>我是第3个section下面的第2个p元素</p>
+	</section>
+</body>
+</html>

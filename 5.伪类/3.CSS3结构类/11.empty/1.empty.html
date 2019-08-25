@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+		}
+		/*匹配div的父元素下的空的div元素*/
+		div:empty{
+			background: red;
+			border: 1px blue solid;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div>我是section下面的第1个div元素</div>
+		<div>我是section下面的第2个div元素</div>
+		<div></div><!--匹配上-->
+	</section>
+	<section>
+		<div>我是section下面的第1个div元素</div>
+		<div></div><!--匹配上-->
+		<div>我是section下面的第2个div元素</div>
+	</section>
+	<div></div><!--匹配上-->
+</body>
+</html>

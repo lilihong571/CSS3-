@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*<!-- 选择section下面的所有在div后面的article标签 -->*/
+		section>div~article{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<article>我是div前面的第1个article</article><!-- 不影响 -->
+		<article>我是div前面的第2个article</article><!-- 不影响 -->
+		<article>我是div前面的第3个article</article><!-- 不影响 -->
+		<div>我是section下面的div</div>
+		<article>我是div后面的第1个article</article><!-- green -->
+		<article>我是div后面的第2个article</article><!-- green -->
+		<article>我是div后面的第3个article</article><!-- green -->
+		<div>我是干扰div</div>
+		<article>我是div后面的第4个article</article><!-- green -->
+	</section>
+</body>
+</html>

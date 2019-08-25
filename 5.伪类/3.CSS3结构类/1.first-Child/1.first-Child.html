@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*<!-- 选择body下面的  第一个且标签为section子元素  下面的所有子元素 -->*/
+		section:first-Child{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		好看
+		<div>我是第1个section下面的第1个div</div><!-- red -->
+		<div>我是第1个section下面的第2个div</div><!-- red -->
+		<div>我是第1个section下面的第3个div</div><!-- red -->
+	</section>
+	<section>
+		<div>我是第2个section下面的第1个div</div>
+		<div>我是第2个section下面的第2个div</div>
+		<div>我是第2个section下面的第3个div</div>
+	</section>
+</body>
+</html>

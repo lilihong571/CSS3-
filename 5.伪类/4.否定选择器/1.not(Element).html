@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*<!-- 除了section父元素的第二个子元素外，其他都有颜色 -->*/
+		section:not(:nth-child(2)){
+			color: red;
+		}
+		/*section:not(p:only-of-type){
+			color: blue;
+		}*/
+	</style>
+</head>
+<body>
+	<section>
+		<div>我是第1个section下面的第1个div元素</div>
+		<p>我是第1个section下面的第1个p元素</p>
+		<div>我是第1个section下面的第2个div元素</div>
+		<div>我是第1个section下面的第3个div元素</div>
+	</section>
+	<section>
+		<div>我是第2个section下面的第1个div元素</div>
+		<div>我是第2个section下面的第2个div元素</div>
+		<p>我是第2个section下面的第1个p元素</p>
+		<div>我是第2个section下面的第3个div元素</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*<!-- 选择所有 包含 属性值为# 的href -->*/
+		a[href~="#"]{
+			color: red;
+		}
+	</style>
+	</style>
+</head>
+<body>
+	<a href="#">我是第1个a标签</a><!-- red -->
+	<a href="#">我是第2个a标签</a><!-- red -->
+	<a href="#">我是第3个a标签</a><!-- red -->
+	<a href="#">我是第4个a标签</a><!-- red -->
+	<a href="#">我是第5个a标签</a><!-- red -->
+	<a href="#1">我是第3个a标签</a>
+	<a href="#2">我是第4个a标签</a>
+	<a href="#3">我是第5个a标签</a>
+</body>
+</html>

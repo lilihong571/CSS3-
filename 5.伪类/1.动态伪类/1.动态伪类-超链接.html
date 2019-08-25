@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*<!-- a通用样式 -->*/
+		a{
+			text-decoration: none;
+			/*默认情况下
+			a:link{
+				color:blue;
+			}
+			a:hover{
+				color:blue;
+			}
+			a:active{
+				color:red;
+			}
+			a:visited{
+				color:#551a8b;
+			}
+			*/
+		}
+		/*自定义*/
+		/*正常情况下文字颜色为黄色*/
+		a:link{
+			color: yellow;
+		}
+		/*鼠标经过情况下，文字颜色为红色*/
+		a:hover{
+			color: red;
+		}
+		/*鼠标点击不松开 或者 鼠标刚点下去情况下，文字颜色橘色*/
+		a:active{
+			color: orange;
+		}
+		/*链接被访问过后文字颜色*/
+		a:visited{
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+	<a href="#">伪类</a>
+</body>
+</html>
